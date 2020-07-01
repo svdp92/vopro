@@ -1,7 +1,7 @@
 <?php
-session_start();
+require_once 'includes/header.php';
 
-require 'databaseconnect.php';
+require 'includes/databaseconnect.php';
 
 if(isset($_POST['login'])){
     $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
@@ -38,7 +38,6 @@ if(isset($_POST['login'])){
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link href="../CSS/style.css" rel="stylesheet">
 </head>
 <body>
 <nav class="topnav">
