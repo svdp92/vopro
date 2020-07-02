@@ -43,9 +43,9 @@ if(isset($_POST['login'])){
 <nav class="topnav">
     <form method="post" action="login.php">
         <label for="username">Gebruikersnaam</label>
-        <input type="text" id="gebruikersnaam" name="username" placeholder="gebruikersnaam">
+        <input type="text" id="username" name="username" placeholder="gebruikersnaam">
         <label for="password">Wachtwoord</label>
-        <input type="text" id="password" name="password" placeholder="wachtwoord">
+        <input type="password" id="password" name="password" placeholder="wachtwoord">
         <button type="submit" name="login" value="login">Log in</button>
         <a href="register.php">Registreren</a>
     </form>
