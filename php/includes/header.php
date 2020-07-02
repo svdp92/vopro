@@ -17,6 +17,10 @@ if(isset($_POST['logout'])) {
             <?php
             if (isset($_SESSION['user_name'])){
                 echo "<li>"."<a href='../php/profile.php'>"."welkom ".$_SESSION['user_name']."</a>"."</li>";
+                echo "<form method=\"post\" action=\"../php/index.php\">".
+                    "<button type=\"submit\" name=\"logout\" value=\"logout\">".
+                    "Log uit".
+                    "</button>";
             }else{
                 echo "<li>"."<a href='../php/login.php'>"."login"."</a>"."</li>";
                 echo "<li>"."<a href='../php/register-form.php'>"."Registreren"."</a>"."</li>";
@@ -24,7 +28,4 @@ if(isset($_POST['logout'])) {
             ?>
 
 </ul>
-<form method="post" action="../php/index.php">
-    <button type="submit" name="logout" value="logout">Log Out</button>
-</form>
 </nav>
