@@ -22,7 +22,7 @@ if(isset($_POST['logout'])) {
                 echo "<li>"."<a href='../php/register-form.php'>"."Registreren"."</a>"."</li>";
             }
             ?>
-        </li>
+
 </ul>
 <form method="post" action="../php/index.php">
     <button type="submit" name="logout" value="logout">Log Out</button>
