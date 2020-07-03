@@ -21,6 +21,5 @@ if ($result['num'] > 0) {
         ':favorite_id'  =>$favAttraction,
     ]);
 
-    echo $favAttraction."Is toegevoegd aan je favorietenlijst.";}
+    echo $favAttraction." is toegevoegd aan je favorietenlijst.";}
 
-echo "<a href='profile.php'>Naar profiel</a>"."<a href='attractions.php'>Terug naar Attractielijst</a>";

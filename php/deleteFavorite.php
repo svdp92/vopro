@@ -11,4 +11,4 @@ $stmt->bindValue(':var', $favAttraction);
 $stmt->bindValue(':user_id', $userid);
 $stmt->execute();
 
-echo "verwijderd";
+echo $favAttraction." is verwijderd van je favorietenlijst.";

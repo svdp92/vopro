@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+}
+
+.topnav ul {
+    display: inline-flex;
+    width:100%;
+}
+.topnav ul li{
+    width: 15%;
+    display:block;
+    justify-items: center;
+    align-items: center;
+}
+.topnav ul li a{
+    display:block;
+    text-decoration: none;
+}
+
+.add-button{
+    padding: 12px;
+    border: solid 2px;
+    text-decoration: none;
+}

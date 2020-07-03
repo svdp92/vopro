@@ -5,8 +5,13 @@ require 'databaseconnect.php';
 
 if(isset($_POST['logout'])) {
     session_destroy();
+    header('location:../php/index.php');
 }
 ?>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<div class="container">
 <nav class="topnav">
     <ul>
         <li><a href="../php/index.php">Home</a></li>
@@ -29,3 +34,4 @@ if(isset($_POST['logout'])) {
 
 </ul>
 </nav>
+</div>

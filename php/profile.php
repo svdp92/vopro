@@ -13,5 +13,5 @@ $stmt->execute();
 foreach($stmt as $fav){
     $favid = $fav["favorite_id"];
     echo "<p>".$fav["favorite_id"]."</p>";
-    echo "<a href=\"./deleteFavorite.php?var=$favid\">Click me!</a>";
+    echo "<a href=\"./deleteFavorite.php?var=$favid\">Verwijderen</a>";
 }
