@@ -7,8 +7,8 @@ require_once "includes/header.php";
 $favAttraction = $_GET['var'];
 $userid = $_SESSION['user_id'];
 
-$stmt = $conn->prepare("select count(*) as num from favorites where user_id = :user_id");
-$stmt->bindValue(':user_id', $userid);
+$stmt = $conn->prepare("select count(*) as num from favorites where favorite_id = :var");
+$stmt->bindValue(':var', $favAttraction);
 $stmt->execute();
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
